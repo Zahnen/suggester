@@ -17,6 +17,11 @@ input, button {
   margin: auto;
   display: block;
 }
+.logoImage {
+  float: right;
+  height: auto;
+  max-width: 8%;
+}
 label {
   margin-bottom: 1%;
   margin-top: 1%;
@@ -27,12 +32,18 @@ label {
   font-style: italic;
 }
 .jumbotron {
-  background-color: #70A9A1;
+  background-color: #ffffff;
 }
 .container-fluid {
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
 }
 body {
   background-color: #ffffff;
+  color: #474F40;
+}
+.card {
+  margin-bottom: 25px;
 }
