@@ -5,19 +5,31 @@ $(document).ready(function() {
     const experience = $("select#prevExperience").val();
 
     $("#results").show();
-    $("span#name").prepend(name);  
+    $("span#name").prepend().text(name);  
     
     if (frustration === "muchFrustration") {
       $("#JavaScript").show();
+      $("#HTML").hide();
+      $("#Python").hide();
+      $("#CSharp").hide();
     }
     else if (frustration === "noFrustration" && experience === "noExperience") {
       $("#HTML").show();
+      $("#JavaScript").hide();
+      $("#CSharp").hide();
+      $("#Python").hide();
     }
     else if (frustration === "noFrustration" && experience === "muchExperience") {
       $("#Python").show();
+      $("#JavaScript").hide();
+      $("#HTML").hide();
+      $("#CSharp").hide();
     }
     else {
       $("#CSharp").show();
+      $("#JavaScript").hide();
+      $("#Python").hide();
+      $("#HTML").hide();
     }
     event.preventDefault();
   });
