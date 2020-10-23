@@ -9,49 +9,57 @@
 </head>
 <body>
   <div class="jumbotron">
-    <h1>Programming Language Suggester</h1>
+    <h1 class="card-title">Programming Language Suggester</h1>
     <p>If you're having difficulty deciding which programming language you may benefit from learning, answer the short questionaire below.</p>
+  </div>
+  <div class="container-fluid">
+    <h3>We know it can be daunting trying to decide which programming language to pursue...</h3>
+    <p>The reality is that regardless of which coding language you pick up first, you'll likely need to learn a second, third, or fourth language to be employable or capable of developing the apps/sites you have been dreaming of. </p>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-8">
-        <h2>Tell us a little bit about yourself:</h2>
+        <div class="card">
+        <div class="card-body">
+        <h4>Tell us a little bit about yourself:</h4>
         <form id="userInfo">
           <label for="name">What's your name?</label></br>
           <input id="name" type="text"></br>
           <label for="prevExperience">Do you have any experience coding?</label>
-          <select id="prevExperience">
+          <select class = "form-control" id="prevExperience">
             <option value="noExperience">I don't even know what code looks like.</option>
             <option value="someExperience">I'm somewhat familiar with the basics of one or two programming languages.</option>
             <option value="muchExperience">I'm an experienced programmer looking to refine my skills.</option>
           </select>
           <label for="futureHopes">What would you most look forward to developing as a programmer?</label>
-          <select id="futureHopes">
+          <select class = "form-control" id="futureHopes">
             <option value="noHopes">I would need to further understand the differences in how different languages develop different programs. </option>
             <option value="someHopes">I think I'd like to focus on developing websites or web applications.</option>
             <option value="muchHopes">I hope to develop mobile applications.</option>
           </select>
           <label for="frontOrBack">Are you interested in frontend (making things pretty) or backend (making things functional)?</label>
-          <select id="frontOrBack">
+          <select class = "form-control" id="frontOrBack">
             <option value="frontend">I would rather focus on making things pretty (frontend). </option>
             <option value="backend">I would rather focus on making things function (backend).</option>
           </select>
           <label for="workFor">Do you intend on working for an employer, or for yourself?</label>
-          <select id="workFor">
+          <select class = "form-control" id="workFor">
             <option value="workEmployer">I am learning to program to switch careers and earn a salary.</option>
             <option value="workSelf">I am learning to program to develop my own ideas in my own time. </option>
           </select>
           <label for="frustration">When studying, do you love to feel frustrated?</label>
-          <select id="frustration">
+          <select class = "form-control" id="frustration">
             <option value="noFrustration">I hate feeling frustrated. </option>
             <option value="muchFrustration">I love feeling frustrated and incompetent.</option>
           </select>
           <button type="submit" class="btn btn-outline-primary">Show me my suggested programming language!</button>
         </form>
       </div>
+      </div>
+      </div>
       <div class="col-4">
         <div id="results">
-          <h2><span id="name"></span>, we think you may benefit from studying<span id="suggestedLanguage"></span>.</h2>
+          <h3><span id="name"></span>, we think you may benefit from studying:</h3>
           <div id="CSharp">
             <p><span class = langName>C#</span> (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.</p>
             <p><span class = langName>C#</span> is used to develop web apps, desktop apps, mobile apps, games and much more.</p>

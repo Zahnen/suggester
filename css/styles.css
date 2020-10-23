@@ -26,3 +26,13 @@ label {
   font-weight: bold;
   font-style: italic;
 }
+.jumbotron {
+  background-color: #70A9A1;
+}
+.container-fluid {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+body {
+  background-color: #ffffff;
+}
