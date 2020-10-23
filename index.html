@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Programming Language Suggester</title>
+</head>
+<body>
+  <div class="jumbotron">
+    <h1>Programming Language Suggester</h1>
+    <p>If you're having difficulty deciding which programming language you may benefit from learning, answer the short questionaire below.</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <h2>Tell us a little bit about yourself:</h2>
+        <form id="userInfo">
+          <label for="name">What's your name?</label></br>
+          <input id="name" type="text"></br>
+          <label for="prevExperience">Do you have any experience coding?</label>
+          <select id="prevExperience">
+            <option value="noExperience">I don't even know what code looks like.</option>
+            <option value="someExperience">I'm somewhat familiar with the basics of one or two programming languages.</option>
+            <option value="muchExperience">I'm an experienced programmer looking to refine my skills.</option>
+          </select>
+          <label for="futureHopes">What would you most look forward to developing as a programmer?</label>
+          <select id="futureHopes">
+            <option value="noHopes">I would need to further understand the differences in how different languages develop different programs. </option>
+            <option value="someHopes">I think I'd like to focus on developing websites or web applications.</option>
+            <option value="muchHopes">I hope to develop mobile applications.</option>
+          </select>
+          <label for="frontOrBack">Are you interested in frontend (making things pretty) or backend (making things functional)?</label>
+          <select id="frontOrBack">
+            <option value="frontend">I would rather focus on making things pretty (frontend). </option>
+            <option value="backend">I would rather focus on making things function (backend).</option>
+          </select>
+          <label for="futureHopes">What would you most look forward to developing as a programmer?</label>
+          <select id="futureHopes">
+            <option value="noHopes">I would need to further understand the differences in how different languages develop different programs. </option>
+            <option value="someHopes">I think I'd like to focus on developing websites or web applications.</option>
+            <option value="muchHopes">I hope to develop mobile applications.</option>
+          </select>
+          <label for="futureHopes">What would you most look forward to developing as a programmer?</label>
+          <select id="futureHopes">
+            <option value="noHopes">I would need to further understand the differences in how different languages develop different programs. </option>
+            <option value="someHopes">I think I'd like to focus on developing websites or web applications.</option>
+            <option value="muchHopes">I hope to develop mobile applications.</option>
+          </select>
+          <button type="submit" class="btn btn-outline-primary">Show me my suggested programming language!</button>
+        </form>
+      </div>
+      <div class="col-4">
+        <div id="results">
+          <h2>INSERT NAME, we think you may benefit from studying:</h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+</body>
+</html>
