@@ -1,0 +1,28 @@
+#results, #CSharp, #JavaScript, #Python, #HTML {
+  display: none;
+  background-color: #ffffff;
+}
+select {
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+input, button {
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+.centerImage {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+label {
+  margin-bottom: 1%;
+  margin-top: 1%;
+  font-weight: 600;
+}
+.langName {
+  font-weight: bold;
+  font-style: italic;
+}

@@ -14,7 +14,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-9">
+      <div class="col-8">
         <h2>Tell us a little bit about yourself:</h2>
         <form id="userInfo">
           <label for="name">What's your name?</label></br>
@@ -49,10 +49,30 @@
           <button type="submit" class="btn btn-outline-primary">Show me my suggested programming language!</button>
         </form>
       </div>
-      <div class="col-3">
+      <div class="col-4">
         <div id="results">
-          <h2>INSERT NAME, we think you may benefit from studying:</h2>
-          <p></p>
+          <h2><span id="name"></span>, we think you may benefit from studying<span id="suggestedLanguage"></span>.</h2>
+          <div id="CSharp">
+            <p><span class = langName>C#</span> (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.</p>
+            <p><span class = langName>C#</span> is used to develop web apps, desktop apps, mobile apps, games and much more.</p>
+            <img class ="centerImage" src="img/csharp.JPG" alt="C Sharp Language Icon">
+          </div>
+          <div id="JavaScript">
+            <p><span class = langName>JavaScript</span> is the world's most popular programming language.</p>
+            <p><span class = langName>JavaScript</span> is the programming language of the web.</p>
+            <p>This page was created using some JavaScript.</p>
+            <img class ="centerImage" src="img/javascript.JPG" alt="JavaScript Language Icon">
+          </div>
+          <div id="Python">
+            <p><span class = langName>Python</span> is a programming language.</p>
+            <p><span class = langName>Python</span> can be used on a server to create web applications.</p>
+            <img class ="centerImage" src="img/python.JPG" alt="Python Language Icon">
+          </div>
+          <div id="HTML">
+            <p>You may want to begin with learning the basics of <span class = langName>HTML</span>. HTML is the standard markup language for Web pages.</p>
+            <p>With <span class = langName>HTML</span> you can create your own website.</p>
+            <img class ="centerImage" src="img/html.JPG" alt="HTML Language Icon">
+          </div>
         </div>
       </div>
     </div>
