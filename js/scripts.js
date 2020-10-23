@@ -7,26 +7,26 @@ $(document).ready(function() {
     $("#results").show();
     $("span#name").prepend().text(name);  
     
-    if (frustration === "muchFrustration") {
-      $("#JavaScript").show();
-      $("#HTML").hide();
-      $("#Python").hide();
-      $("#CSharp").hide();
-    }
-    else if (frustration === "noFrustration" && experience === "noExperience") {
-      $("#HTML").show();
+    if (experience === "noExperience") {
+      $("#HTML").fadeIn();
       $("#JavaScript").hide();
       $("#CSharp").hide();
       $("#Python").hide();
     }
+    else if (frustration === "muchFrustration" && experience != "noExperience") {
+      $("#JavaScript").fadeIn();
+      $("#HTML").hide();
+      $("#Python").hide();
+      $("#CSharp").hide();
+    }
     else if (frustration === "noFrustration" && experience === "muchExperience") {
-      $("#Python").show();
+      $("#Python").fadeIn();
       $("#JavaScript").hide();
       $("#HTML").hide();
       $("#CSharp").hide();
     }
     else {
-      $("#CSharp").show();
+      $("#CSharp").fadeIn();
       $("#JavaScript").hide();
       $("#Python").hide();
       $("#HTML").hide();
